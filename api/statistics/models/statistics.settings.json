@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "statistics",
+  "info": {
+    "name": "statistics",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "downloads": {
+      "type": "biginteger"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "coutries": {
+      "type": "richtext"
+    }
+  }
+}

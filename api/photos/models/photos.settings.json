@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "photos",
+  "info": {
+    "name": "photos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "tags": {
+      "collection": "tags"
+    },
+    "category": {
+      "model": "sub-categories"
+    },
+    "views": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "downloads": {
+      "type": "biginteger",
+      "private": true,
+      "default": "0"
+    },
+    "date": {
+      "type": "datetime"
+    }
+  }
+}
