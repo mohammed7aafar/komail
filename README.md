@@ -1,3 +1,3 @@
-# Strapi application
+# backend application
 
-A quick description of your strapi application
+Backend Dashboard app with Rest API using Node js + React js
